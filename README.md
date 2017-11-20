@@ -3,8 +3,8 @@ ResourceSpace running on Apache2 Docker Container Built on phusion/baseimage
 
 ## Example usage:
 docker run -p 80:80 \
--v <pat to mount>:/var/www/html/include \
--v <path to mount>:/var/www/html/filestore \
+-v **[path to mount]**:/include \
+-v **[path to mount]**:/filestore \
 creecros/resourcespace-docker
   
 docker run -p 3306:3306 \
