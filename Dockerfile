@@ -39,5 +39,9 @@ RUN chmod -R 777 include
 RUN mkdir /etc/service/apache2                                                                                                                           
 COPY conf/apache2.sh /etc/service/apache2/run                                                                                                            
 RUN chmod a+x /etc/service/apache2/run                                                                                                                   
-WORKDIR /                                                                                                                                                                                                                                                                                       
+WORKDIR /   
+RUN ln -s /var/www/html/include include
+RUN ln -s /var/www/hml/filestore filestore                                                                                                               
+VOLUME /include                                                                                                                                          
+VOLUME /filestore   
 EXPOSE 80   
