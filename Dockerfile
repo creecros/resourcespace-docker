@@ -41,7 +41,7 @@ COPY conf/apache2.sh /etc/service/apache2/run
 RUN chmod a+x /etc/service/apache2/run                                                                                                                   
 WORKDIR /   
 RUN ln -s /var/www/html/include include
-RUN ln -s /var/www/hml/filestore filestore                                                                                                               
+RUN ln -s /var/www/html/filestore filestore                                                                                                               
 VOLUME /include                                                                                                                                          
 VOLUME /filestore   
 EXPOSE 80   
