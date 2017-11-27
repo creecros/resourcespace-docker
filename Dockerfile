@@ -32,7 +32,7 @@ RUN sed -i -e "s/max_execution_time\s*=\s*30/max_execution_time = 1000/g" /etc/p
 RUN sed -i -e "s/memory_limit\s*=\s*128M/memory_limit = 1G/g" /etc/php5/apache2/php.ini                                                                  
 WORKDIR /var/www/html                                                                                                                                    
 RUN rm index.html                                                                                                                                        
-RUN svn co http://svn.resourcespace.com/svn/rs/releases/8.3/ .                                                                                           
+RUN svn co http://svn.resourcespace.com/svn/rs/releases/8.1/ .                                                                                           
 RUN mkdir filestore                                                                                                                                      
 RUN chmod 777 filestore                                                                                                                                  
 RUN chmod -R 777 include                                                                                                                                 
