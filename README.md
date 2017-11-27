@@ -1,4 +1,4 @@
-# ResourceSpace v8.3 Docker Container
+# ResourceSpace v8.2 Docker Container
 ResourceSpace running on Apache2 Docker Container Built on phusion/baseimage
 
 ## Example usage:
