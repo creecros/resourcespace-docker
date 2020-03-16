@@ -18,7 +18,7 @@ RUN apk update && \
 
 ADD . /var/www/app
 ADD docker/ /
-RUN svn co http://svn.resourcespace.com/svn/rs/releases/9.1/ ./var/www/app
+RUN svn co http://svn.resourcespace.com/svn/rs/releases/9.2/ ./var/www/app
 
 VOLUME /var/www/app/include
 VOLUME /var/www/app/filestore
