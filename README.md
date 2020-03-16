@@ -18,6 +18,6 @@ ResourceSpace running on Alpine  with Nginx
 ## Example usage:
 ```
 docker run -p 80:80 \
-creecros/resourcespace-docker:v9.0
+creecros/resourcespace-docker:v9.2
 ```
 
